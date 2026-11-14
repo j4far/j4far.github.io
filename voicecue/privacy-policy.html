@@ -18,37 +18,39 @@
 <body>
 <span class="badge">Privacy First</span>
 <h1>VoiceCue — Privacy Policy</h1>
-<p><em>Last updated: 13 November 2026</em></p>
+<p><em>Last updated: 14 November 2026</em></p>
 
-<p>VoiceCue ("the app", "we", "our") is an offline voice-follow teleprompter and video recording studio. We respect your privacy: VoiceCue is engineered so that your scripts, voice recognition, and video recordings remain strictly on your own device.</p>
+<p>VoiceCue ("the app", "we", "our") is an offline voice-follow teleprompter and video recording studio available for iOS and Android. We respect your privacy: VoiceCue is engineered so that your scripts, voice recognition, and video recordings remain strictly on your own device.</p>
 
 <h2>1. On-Device Speech Recognition &amp; Video</h2>
 <p>VoiceCue does not stream, upload, or process your speech or camera feeds on remote cloud servers:</p>
 <ul>
-  <li><strong>Microphone:</strong> Audio captured while reading a script or recording a video is analyzed entirely in real time on your phone by an embedded, offline speech recognition engine. Voice data is not stored permanently or transmitted anywhere.</li>
-  <li><strong>Camera:</strong> Video feeds from the front or rear camera are processed directly on your device via hardware encoders (Camera2, MediaCodec). Live looks, background replacement, and AI eye contact corrections are computed entirely on-device using local machine learning models.</li>
+  <li><strong>Microphone &amp; Speech Recognition:</strong> Audio captured while reading a script or recording a video is analyzed entirely in real time on your device. On iOS, voice follow uses Apple's native on-device speech recognizer. On Android, it uses an embedded, offline speech model. Your voice data is never recorded to disk during prompter reading, nor is it uploaded to any remote server.</li>
+  <li><strong>Camera &amp; Video:</strong> Video feeds from the front or rear camera are processed directly on your device via native hardware encoders (AVFoundation on iOS; Camera2 and MediaCodec on Android). Live looks, background replacement, and AI eye contact corrections are computed entirely on-device using local machine learning and GPU shaders.</li>
   <li><strong>Scripts &amp; Takes:</strong> Your scripts and recorded takes are kept in app-private storage. They are never synced to any remote database by the app. If you uninstall the app, local app-private scripts and takes are removed by the operating system.</li>
 </ul>
 
 <h2>2. Permissions</h2>
 <p>VoiceCue requests the minimum set of permissions necessary for its functionality:</p>
 <ul>
-  <li><code>RECORD_AUDIO</code>: Required to listen to your voice for the voice-following teleprompter and to record audio in your video takes.</li>
-  <li><code>CAMERA</code>: Required to preview your shot and record video while teleprompting.</li>
-  <li><code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>: Used solely by Google AdMob to deliver ads in the free tier and by Google Play Billing to process VoiceCue Pro upgrades. The core teleprompter and video recording features require no internet connection.</li>
+  <li><strong>Microphone:</strong> Required to listen to your voice for the voice-following teleprompter and to record audio in your video takes.</li>
+  <li><strong>Camera:</strong> Required to preview your shot and record video while teleprompting.</li>
+  <li><strong>Speech Recognition (iOS):</strong> Required on iOS for the on-device voice-following teleprompter. Audio is processed locally.</li>
+  <li><strong>App Tracking Transparency (iOS):</strong> In the free tier on iOS, we request tracking authorization for Google AdMob to deliver relevant advertisements. You can allow or deny this request without affecting app functionality.</li>
+  <li><strong>Internet &amp; Network State:</strong> Used solely by Google AdMob to deliver ads in the free tier and by Google Play Billing / Apple StoreKit to process VoiceCue Pro upgrades. The core teleprompter and video recording features require no internet connection.</li>
 </ul>
 
 <h2>3. Advertising &amp; In-App Purchases</h2>
 <p>The free version of VoiceCue displays advertisements powered by Google AdMob:</p>
 <ul>
-  <li>Google AdMob may collect device identifiers (such as the Google Advertising ID), approximate location, IP address, and ad interaction data in accordance with Google's privacy policies.</li>
-  <li>In jurisdictions requiring user consent (such as the UK, EEA, and Switzerland), we present Google's User Messaging Platform (UMP) consent dialog. You can manage or revoke your ad consent at any time inside the app.</li>
-  <li>In-app purchases and subscriptions are handled securely through Google Play Billing. We never receive or store your payment details or credit card information.</li>
+  <li>Google AdMob may collect device identifiers (such as the Apple IDFA or Google Advertising ID), approximate location, IP address, and ad interaction data in accordance with Google's privacy policies.</li>
+  <li>In jurisdictions requiring user consent (such as the UK, EEA, and Switzerland), we present Google's User Messaging Platform (UMP) consent dialog. You can manage or revoke your ad consent at any time inside the app settings.</li>
+  <li>In-app purchases (VoiceCue Pro) are handled securely through Apple App Store (StoreKit) on iOS and Google Play Billing on Android. We never receive or store your payment details, banking, or credit card information.</li>
   <li>For more information on Google's practices, please visit: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>.</li>
 </ul>
 
 <h2>4. Data Retention and Deletion</h2>
-<p>Because VoiceCue does not collect personal data or store data on external servers, there is no server-side account or personal data to delete. Deleting a script or video within the app permanently removes it from your device's app storage. You can delete all local data at any time by clearing the app storage in your Android settings or uninstalling the app.</p>
+<p>Because VoiceCue does not collect personal data or store data on external servers, there is no server-side account or personal data to delete. Deleting a script or video within the app permanently removes it from your device's app storage. You can delete all local data at any time by clearing app storage in device settings or uninstalling the app.</p>
 
 <h2>5. Children's Privacy</h2>
 <p>VoiceCue is intended for general audiences aged 13 and older. We do not knowingly collect personal information from children under 13.</p>
